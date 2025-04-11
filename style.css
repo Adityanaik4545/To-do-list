@@ -23,3 +23,6 @@ main{
     justify-content:space-around;
 
 }
+.strikeoff{
+    text-decoration: line-through;
+}
