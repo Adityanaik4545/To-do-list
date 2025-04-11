@@ -1,0 +1,25 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    width: 800px;
+    border-radius: 1rem;
+    height: 500px;
+    border: 1px solid black;
+}
+.search-bar input{
+    font-size: x-large;
+}
+.search-bar button{
+    font-size: x-large;
+    font-weight: bold;
+    width: 10rem;
+}
+.search-bar{
+    display: flex;
+    justify-content:space-around;
+
+}
