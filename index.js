@@ -19,7 +19,7 @@ let userList = document.querySelector(".todo-list");
 let singleTask = document.querySelector(".task-container");
 taskToDo.forEach((taskData,index) => {
     let taskdiv = document.createElement("div")
-
+    taskdiv.classList.add("individual-task")
     let checkBox = document.createElement("input")
     checkBox.setAttribute("type", "checkbox")
 
@@ -38,7 +38,7 @@ taskToDo.forEach((taskData,index) => {
     taskdiv.appendChild(delBtn)
     singleTask.appendChild(taskdiv)
     
-    //delete button
+    //delete button 'deletes data from local storage'
     delBtn.addEventListener("click", function () {
         taskToDo.splice(index,1);
         localStorage.setItem("taskToDo",JSON.stringify(taskToDo))
@@ -58,6 +58,7 @@ button.addEventListener("click", function () {
         return;
     }
     let taskdiv = document.createElement("div")
+    taskdiv.classList.add("individual-task")
 
     let checkBox = document.createElement("input")
     checkBox.setAttribute("type", "checkbox")
@@ -74,6 +75,7 @@ button.addEventListener("click", function () {
     localStorage.setItem("taskToDo", JSON.stringify(taskToDo));
 
     let delBtn = document.createElement("button")
+    delBtn.classList.add("delete-btn")
     delBtn.textContent = "Delete";
 
     taskdiv.appendChild(checkBox)
